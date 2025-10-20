@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* app/globals.css or styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom gradient text class */
+.gradient-text {
+  @apply bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent;
+}
